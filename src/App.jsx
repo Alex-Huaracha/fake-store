@@ -1,9 +1,12 @@
 import './App.css';
+import { Outlet } from 'react-router';
 
 function App() {
   return (
     <>
-      <h1>Hola mundo</h1>
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }
