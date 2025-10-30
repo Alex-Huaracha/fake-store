@@ -7,6 +7,10 @@ import routes from './routes.jsx';
 
 const router = createBrowserRouter(routes);
 
+// Render icons
+import iconSprite from './assets/icons.svg?raw';
+document.body.insertAdjacentHTML('afterbegin', iconSprite);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />

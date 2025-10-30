@@ -27,6 +27,9 @@
 
   /* Font Family */
   --font-family-base: 'Roboto', sans-serif;
+
+  /* UI colors */
+  --ui-border: #ff8c00;
 }
 
 body {
