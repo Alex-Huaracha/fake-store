@@ -9,16 +9,7 @@
   </symbol>
 
   <!-- Logo -->
-  <!-- buttons -->
-  <symbol id="icon-logo1" viewBox="0 0 48 48">
-    <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m20 15l4 4l4-4V4h-8zm0 18l4-4l4 4v11h-8zm13-5l-4-4l4-4h11v8zm-18-8l4 4l-4 4H4v-8z"/>
+  <symbol id="icon-logo" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"/>
   </symbol>
-
-  <symbol id="icon-logo2" viewBox="0 0 48 48">
-    <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
-      <path fill="currentColor" d="M44 28H28v16h16zM13 4l9 16H4zm23 16a8 8 0 1 0 0-16a8 8 0 0 0 0 16Z"/>
-      <path stroke-linecap="round" d="m4 28l16 16m0-16L4 44"/>
-    </g>
-  </symbol>
-
 </svg>

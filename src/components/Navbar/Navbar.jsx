@@ -8,12 +8,9 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <h1>The Gamer's Vault</h1>
+        <h1>Fake Store</h1>
         <svg className={styles.icon}>
-          <use href="#icon-logo1"></use>
-        </svg>
-        <svg className={styles.icon}>
-          <use href="#icon-logo2"></use>
+          <use href="#icon-logo"></use>
         </svg>
       </div>
       <ul className={styles.navLinks}>
