@@ -1,7 +1,11 @@
 import { useFetch } from '../../hooks/useFetch';
+import { useCartContext } from '../../context/Cart.context';
+import { ProductCard } from '../../components';
 import styles from './Shop.module.css';
 
 export const Shop = () => {
+  const { addToCart } = useCartContext();
+
   const {
     data: products,
     loading,
@@ -35,25 +39,11 @@ export const Shop = () => {
 
       <div className={styles.productGrid}>
         {products?.map((product) => (
-          <article key={product.id} className={styles.productCard}>
-            <div className={styles.imageContainer}>
-              <img src={product.image} alt={product.title} />
-            </div>
-
-            <div className={styles.productInfo}>
-              <h3>{product.title}</h3>
-              <p className={styles.price}>${product.price}</p>
-
-              <div className={styles.actions}>
-                <div className={styles.quantityControl}>
-                  <button>-</button>
-                  <input type="number" defaultValue="1" min="1" />
-                  <button>+</button>
-                </div>
-                <button className={styles.addToCart}>Add to Cart</button>
-              </div>
-            </div>
-          </article>
+          <ProductCard
+            key={product.id}
+            product={product}
+            onAddToCart={addToCart}
+          />
         ))}
       </div>
     </div>
