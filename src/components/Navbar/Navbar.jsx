@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router';
+import { useCartContext } from '../../context/Cart.context';
 import styles from './Navbar.module.css';
 
 export const Navbar = () => {
-  // Hardcoded por ahora, luego vendrá del CartContext
-  const cartItemsCount = 0;
+  const { totalItemsInCart } = useCartContext();
 
   return (
     <nav className={styles.navbar}>
@@ -36,8 +36,8 @@ export const Navbar = () => {
             className={({ isActive }) => (isActive ? styles.active : '')}
           >
             Cart
-            {cartItemsCount > 0 && (
-              <span className={styles.badge}>{cartItemsCount}</span>
+            {totalItemsInCart > 0 && (
+              <span className={styles.badge}>{totalItemsInCart}</span>
             )}
           </NavLink>
         </li>
