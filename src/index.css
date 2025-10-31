@@ -2,13 +2,12 @@
 
 :root {
   /* Colors */
-  --bg-primary: #242424;
-  --bg-secondary: #00000065;
-  --bg-tertiary: #00000040;
+  --bg-primary: #010000;
+  --bg-secondary: #363636;
 
   /* Text color */
-  --text-color: #ffffffeb;
-  --text-color-secondary: #eb0909;
+  --tc-primary: #ffffffeb;
+  --tc-secondary: #cecece;
 
   /* Text Button color */
   --text-button: #81e6d9;
@@ -35,8 +34,8 @@
 body {
   font-family: var(--font-family-base);
   background-color: var(--bg-primary);
-  color: var(--text-color);
   min-height: 100vh;
   /* Mobile-first typography */
   font-size: var(--font-base);
+  color: var(--tc-primary);
 }
