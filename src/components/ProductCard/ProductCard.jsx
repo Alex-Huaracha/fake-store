@@ -21,7 +21,7 @@ export const ProductCard = ({ product, onAddToCart }) => {
 
   const handleAddToCart = () => {
     onAddToCart(product, quantity);
-    setQuantity(1); // Reset a 1 después de agregar
+    setQuantity(1);
   };
 
   return (
